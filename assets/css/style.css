@@ -1,0 +1,67 @@
+
+#lista-tarefas {
+    /* mobile first */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.2rem;
+
+    /*
+    @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    */
+}
+form {
+    max-width: 600px;
+    margin: 1.78rem auto;
+
+    .botoes {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Press Start 2P', sans-serif; /* Define a fonte */
+    margin: 0; /* Remove margens padrão do corpo */
+    padding: 0; /* Remove preenchimento padrão do corpo */
+}
+
+/* Estilos adicionais para elementos específicos */
+h1 {
+    text-align: center;
+}
+p{}
+
+/* Estilos para o botão de nova tarefa */
+.nes-btn.is-primary {
+    background-color: #212121; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+}
+
+/* Estilos para o contêiner de lista de tarefas */
+#lista-tarefas {
+    display: flex; /* Flexbox para alinhar os contêineres lado a lado */
+    flex-wrap: wrap; /* Permite que os contêineres quebrem para a próxima linha conforme necessário */
+    justify-content: center; /* Centraliza os contêineres horizontalmente */
+    padding: 20px; /* Adiciona algum espaço interno */
+}
+
+/* Estilos para cada contêiner de tarefa */
+.nes-container.with-title {
+    width: 300px; /* Define a largura do contêiner */
+    margin: 10px; /* Adiciona algum espaço entre os contêineres */
+    background-color: #333; /* Cor de fundo do contêiner */
+    color: #fff; /* Cor do texto dentro do contêiner */
+}
+
+/* Estilos para os botões dentro dos contêineres de tarefa */
+.nes-btn {
+    margin: 5px; /* Adiciona algum espaço entre os botões */
+}
